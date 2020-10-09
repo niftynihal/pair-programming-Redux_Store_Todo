@@ -1,4 +1,4 @@
-import {ADD_TODO, DELETE_TODO, TOGGLE_TODO} from './actionTypes'
+import {ADD_TODO, DELETE_TODO, TOGGLE_TODO, LOGOUT_SUCCESS, LOGIN_SUCCESS} from './actionTypes'
 import {v4 as uuid} from "uuid";
 
 export const addTodo = (payload) => ({
@@ -18,4 +18,12 @@ export const deleteTodo = (payload) => ({
 export const toggleTodo = (payload) => ({
     type : TOGGLE_TODO,
     payload
+})
+
+export const userLogin = () => ({
+    type : LOGIN_SUCCESS
+})
+
+export const userLogout = () => ({
+    type : LOGOUT_SUCCESS
 })

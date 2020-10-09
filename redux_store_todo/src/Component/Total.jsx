@@ -24,9 +24,9 @@ class Total extends React.Component {
 
 const mapStateToProps = (state) => { 
     return {
-        total:state.total,
-        completed:state.completed,
-        incomplete: state.incomplete
+        total:state.app.total,
+        completed:state.app.completed,
+        incomplete: state.app.incomplete
     };
 };
 
